@@ -2,7 +2,7 @@
 
 int main() {
 	char operator = 0;
-	float num1 = 0, num2 = 0;
+	float num1 = 0, num2 = 0, result;
 
 	printf("Enter a 1st number:\n");
 	scanf("%f", &num1);
@@ -23,7 +23,7 @@ int main() {
                 break;
                 case '/':
 		if (num2 == 0) {
-			printf("You cnnt divide by zero!");
+			printf("You cannot divide by zero!\n");
 			return 2;
 		}
                 result = num1 / num2;
