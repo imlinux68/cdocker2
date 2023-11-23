@@ -22,12 +22,16 @@ int main() {
                 result = num1 * num2;
                 break;
                 case '/':
+		if (num2 == 0) {
+			printf("You cnnt divide by zero!");
+			return 2;
+		}
                 result = num1 / num2;
                 break;
 		default:
 		printf("What is this operator does mean?\n");
 		return 1;
-
-
+	}
+	printf("The result is: %f\n", result );
 return 0;
 }
